@@ -168,11 +168,7 @@ namespace test.Controllers
         }
 
 
-        [HttpGet("string")]
-        public Product GetString()
-        {
-            return new Product() { Id = 1,Name = "name",Description = "Desc",Category = "Category"};
-        }
+     
 
 
 

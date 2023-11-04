@@ -1,10 +1,21 @@
 ﻿using MessagePack;
+using Stripe;
 
 namespace test.Models
 {
     public class Product
     {
 
+        public Product(long Id,string Name,string Description,string Category,long Price,string Additional_inf,int Quantity) {
+            this.Id = Id;
+            this.Name = Name;
+            this.Description = Description;
+            this.Category = Category;
+            this.Price = Price;
+            this.Additional_inf = Additional_inf;
+            this.Quantity = Quantity;
+
+        }
 
         public long Id { get; set; }
         public string Name { get; set; }
@@ -14,6 +25,8 @@ namespace test.Models
         public string Additional_inf { get; set; }
 
         public int Quantity { get; set; }
+
+        public string ImageUrl { get; set; }
 
 
         
